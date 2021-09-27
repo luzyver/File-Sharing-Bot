@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "dana":
         await query.message.edit_text(
-            text = f"<b>Halo {first}, silahkan klik <a href="https://t.me/dagetluzyverbot/14/">disini</a>!",
+            text = f"<b>Halo {first}, silahkan klik <a href="https://t.me/dagetluzyverbot/14/">disini</a>!</b>",
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
