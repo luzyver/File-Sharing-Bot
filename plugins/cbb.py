@@ -8,9 +8,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "dana":
         await query.message.edit_text(
-            text = f"<b>Halo {first}, kamu mau <code>Rp. 15.000</code> dana? Caranya gampang, kamu download Neo+ kemudian daftar dengan memasukkan kode undangan <code>JTLB22</code>. Jika sudah buka rekening, tunggu sampai pembukaan rekening sukses. Jika sudah upload buktinya disini dengan format\n<code>FOTO</code>\nNo Pendaftaran :\nNo Dana :\n\nCek secara berkala link File Sharingnya!",
+            text = f"<b>Halo {first}, silahkan klik <a href="https://t.me/dagetluzyverbot/14/">disini</a>!",
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
