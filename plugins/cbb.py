@@ -8,7 +8,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "dana":
         await query.message.edit_text(
             text = f"<b>Halo {first}, silahkan klik <a href="https://t.me/dagetluzyverbot/14/">disini</a>!</b>",
             disable_web_page_preview = True,
